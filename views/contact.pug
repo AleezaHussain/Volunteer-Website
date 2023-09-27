@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+  style 
+    include ../static/contact.css
+  body
+    nav#navbar
+        div.logo
+          img(src="static/hand.jpeg", alt="net error")
+        ul
+          li #[a(href = "/home") Home ]
+          li #[a(href = "/") AboutUs] 
+          li #[a(href = "/") Donate ]
+          li #[a(href = "/contact") Contact]
+    
+    div.page-contact
+        h3 Contact Us 
+        form(action="/submit-contact", method="POST")
+          h6#email Email:
+          input(type="text", class= "email",name = "email",placeholder="emailaddress")
+          h6#purpose State your purpose:
+          textarea(name="purpose" class ="purpose" rows="3" cols="24" style="overflow: auto;")
+          //- button(type="button" , class ="submit") Submit
+          button.submit
+            a(href="/thankyou") submit
+
+    footer 
+      div.info
+        p.p1 email-address :abc_help@gmail.com
+        p.p2 contact# : 03xxxxxxxxx
+        button(type="button" , class ="bt",onclick="backtotop()") Back to top
+ 
+  script
+      include ../static/contact.js  

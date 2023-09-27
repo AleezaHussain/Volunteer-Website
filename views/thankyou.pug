@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+  style 
+    include ../static/thankyou.css
+  script
+      include ../static/index.js    
+
+  body
+    nav#navbar
+        div.logo
+          img(src="static/hand.jpeg", alt="net error")
+        ul
+          li #[a(href = "/home") Home ]
+          li #[a(href = "/") AboutUs] 
+          li #[a(href = "/") Donate ]
+          li #[a(href = "/contact") Contact]
+
+    div.thank
+        h3 Thankyou for your Time! 
+        p#p2 Your response is recorded. We will get back to you Soon! 
+        p#p1 The expected waiting time is 2-3 days.
+        button
+            a(href="/home") Back to Home
+ 

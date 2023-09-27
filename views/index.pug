@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+  style 
+    include ../static/style.css
+  body
+    video.vid(autoplay loop muted)
+      source(src="static/145085 (1080p).mp4" type="video/mp4")
+    video.vid2(autoplay loop muted)
+      source(src="static/145085 (1080p).mp4" type="video/mp4")
+    video.vid3(autoplay loop muted)
+      source(src="static/145085 (1080p).mp4" type="video/mp4")
+    nav#navbar
+        div.logo
+          img(src="static/hand.jpeg", alt="net error")
+        ul
+          li #[a(href = "/") Home ]
+          li #[a(href = "/") AboutUs] 
+          li #[a(href = "/") Donate ]
+          li
+            a(href="/contact") Contact
+    div#introsection 
+      div.bg 
+        img(src="static/bg.jpg", alt="")
+        //- | Welcome to Helping Angels
+      div.heading 
+        | Let us together make a change...
+
+    div#DonationSection
+      div.spon
+        h3 Our-Mission
+
+      div.cardsall  
+        div.card
+          img(src='static/education.jpeg', alt='Education Image')
+
+        div.card1
+          img(src='static/food.jpeg', alt='food Image')
+
+        div.card2
+          img(src='static/homes.jpeg', alt='home Image')
+
+    div.aim
+      p Our goal is to construct residences while offering complimentary education and meals to those who are in need. 
+
+    //- div.achievement
+    //-   h4 Nourishing Hope!
+    //-   div.allmeter
+    //-     div.s1
+    //-       span 2400
+    //-       div.s2 
+    div.image-slider
+      h4 Nourishing Hope!
+      div.pics
+        p Our Accomplishments!!
+        
+         
+
+
+
+    div.info
+        p.p1 email-address :abc_help@gmail.com
+        p.p2 contact# : 03xxxxxxxxx
+      
+    
+    
+
+    script
+        include ../static/index.js
+    
